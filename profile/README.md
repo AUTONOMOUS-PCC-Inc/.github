@@ -110,19 +110,6 @@ Indoor Localization       Digital Twin Simulation     V2X Communication
 
 ---
 
-### 👥 Team
-
-| Name | Role | Background |
-|------|------|------------|
-| 윤성웅 (Yoon Seongung) | CEO | Autonomous driving & embedded systems, Kyungpook Nat'l Univ. (M.S.) |
-| 조정훈 (Cho Jeonghun) | Tech Advisor | Professor, Dept. of Electronics, Kyungpook Nat'l Univ. (20yr) |
-| 김준혁 (Kim Junhyeok) | Tech Advisor | Hyundai Mobis Sales Div. 2 / Hyundai Engb |
-| 이석권 (Lee Seokgwon) | CTO | ICT Mentoring × Smart Maritime Logistics |
-| 진호근 (Jin Hogeun) | CAO | Business development, Daewoong Pharma |
-| 김도현 (Kim Dohyeon) | CCO | Security & HR, BoB (Next-gen Security Leader) |
-
----
-
 ### 🏗️ Repositories
 
 | Repo | Description | Status |
@@ -135,32 +122,16 @@ Indoor Localization       Digital Twin Simulation     V2X Communication
 
 ---
 
-### 🤝 Partners & Collaborators
-
-**Current:**
-- 🌊 **OceanLightAI** — Vision system & web app development
-- ⚙️ **Ability Systems** — Consortium tech partner, Hyundai Mobis commercialization
-- 🔬 **Kiwa** — GPS-denied environment technical validation
-
-**Network:**
-- Mappers · Total Soft Bank · LKSYS · KHNT · Kiwa
-
-**Target Investors:**
-- Hyundai Motor Zero-One Fund 3 (SDV mobility)
-- Ministry of Oceans & Fisheries Maritime Fund
-
----
 
 ### 📬 Contact
 
 | | |
 |--|--|
-| 📧 Email | 2170004487z@gmail.com |
+| 📧 Email | 2170004487b@gmail.com |
 | 📱 Phone | 010-2596-6265 |
 | 🌍 Location | Korea, South |
 | 🏢 CEO | 윤성웅 (Yoon Seongung) |
 
----
 
 ---
 
@@ -216,56 +187,8 @@ Indoor Localization       Digital Twin Simulation     V2X Communication
 실내 측위                  디지털트윈 시뮬레이션    V2X 통신
 ```
 
-**경쟁 차별점:**
-- PCC 선박 **전용 설계** 유일 솔루션
-- 라이다 대비 설치비 **40% 절감**
-- 완전 **SDV V2X 양방향 통신**
-- **kiwa**(기술검증), **어빌리티시스템즈**(컨소시엄), **현대모비스**(상용화 파트너) 협력 완료
-
 ---
 
-### 📊 시장 규모
-
-| 시장 | 규모 | 설명 |
-|------|------|------|
-| TAM | 5조 8천억원 | 글로벌 해상 차량 수송 시장 (2,370만대) |
-| SAM | 1조 6천억원 | 자동하역시스템 도입 가능 시장 |
-| SOM | 2천7백억원 | 자율주행차량 수송 중심 선박 초기 시장 (~200만대) |
-
-**초기 목표 매출: 연간 10억원 이상**
-- IP 라이선스 (어빌리티시스템즈, 토탈소프트뱅크): 연 약 5억원
-- 엔지니어링 서비스 (현대모비스): 연 약 3억원
-- 유지보수 (현대글로비스, 광양항): 연 약 2억원
-
----
-
-### 🗺️ 마일스톤 로드맵
-
-```
-2026 ──────────────── 2028 ──────────────── 2030
-  │                     │                     │
-  ├─ AVAS 시스템 고도화   ├─ 글로벌 완성차 선사   ├─ PCC 자율 하역
-  ├─ 광양항 테스트베드    │  솔루션 공급 확대     │  솔루션 글로벌 표준화
-  │  1단계 통합 운영     ├─ 미국·유럽 항만        ├─ 물류/모빌리티 기업
-  └─ 시드 및 TIPS 유치   │  파트너십 체결        │  M&A 추진
-                         └─ 시리즈-A 유치        └─ 글로벌 자동차 수출
-                                                    항만 점유율 1위 목표
-```
-
----
-
-### 👥 팀 소개
-
-| 이름 | 직책 | 배경 |
-|------|------|------|
-| 윤성웅 | CEO | 자율주행·임베디드 시스템, 경북대 전자전기공학부 석사과정 |
-| 조정훈 | 기술고문 | 경북대 전자공학부 정교수 (20년), 한국인공지능기술산업협회 이사 |
-| 김준혁 | 기술고문 | 현대모비스 영업2부 / 현대엔지비 기획팀 |
-| 이석권 | CTO | ICT멘토링×스마트해상물류 본선, 대구AI허브 모빌리티 과정 수료 |
-| 진호근 | CAO | 대웅제약 영업1부, 영업개발 담당 |
-| 김도현 | CCO | 보안·인사관리, BoB(차세대 보안리더 양성과정) 수료 |
-
----
 
 ### 🏗️ 레포지토리
 
@@ -277,21 +200,6 @@ Indoor Localization       Digital Twin Simulation     V2X Communication
 | [`PMS_server`](https://github.com/AUTONOMOUS-PCC-Inc/PMS_server) | PMS 백엔드 서버 (비공개) | 🔒 비공개 |
 | [`wecharging`](https://github.com/AUTONOMOUS-PCC-Inc/wecharging) | 전기차 충전 연동 모듈 | 🟡 진행중 |
 
----
-
-### 🤝 협력사 및 파트너
-
-**현재 협력:**
-- 🌊 **OceanLightAI** — 비전 시스템 및 웹앱 개발
-- ⚙️ **어빌리티시스템즈** — 컨소시엄 기술파트너 / 현대모비스 상용화 핵심 공급자
-- 🔬 **kiwa** — GPS 불능 환경 기술 검증
-
-**향후 협력 네트워크:**
-- 맵퍼스 · 토탈소프트뱅크 · 엘케이시스 · 금하네이벌텍 · kiwa
-
-**목표 투자처:**
-- 현대자동차 제로원 3호 펀드 (SDV 모빌리티)
-- 해양수산부 해양 모태펀드
 
 ---
 
@@ -299,7 +207,7 @@ Indoor Localization       Digital Twin Simulation     V2X Communication
 
 | | |
 |--|--|
-| 📧 이메일 | 2170004487z@gmail.com |
+| 📧 이메일 | 2170004487b@gmail.com |
 | 📱 전화 | 010-2596-6265 |
 | 🌍 위치 | 대한민국 |
 | 🏢 대표자 | 윤성웅 |
