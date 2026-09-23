@@ -7,14 +7,14 @@
 In GPS-denied zones aboard car carriers (PCC) and across port terminals,<br>
 we automate **unmanned unloading and parking** of autonomous vehicles with fisheye–LiDAR fusion positioning.
 
-[![Website](https://img.shields.io/badge/Website-autonomouspcc-0B1B33?style=flat-square)](https://d89yicdpi4w1g.cloudfront.net) [![Domain](https://img.shields.io/badge/Field-Ship%20%26%20Port%20Autonomy-1E6FD9?style=flat-square)](#) [![TRL](https://img.shields.io/badge/TRL-4~5-16A34A?style=flat-square)](#) [![Patents](https://img.shields.io/badge/Patents-3%20registered-7C3AED?style=flat-square)](#)
+[![Website](https://img.shields.io/badge/Website-autonomouspcc-0B1B33?style=for-the-badge)](https://d89yicdpi4w1g.cloudfront.net) [![Domain](https://img.shields.io/badge/Field-Ship%20%26%20Port%20Autonomy-1E6FD9?style=for-the-badge)](#) [![TRL](https://img.shields.io/badge/TRL-4~5-16A34A?style=for-the-badge)](#) [![Patents](https://img.shields.io/badge/Patents-3%20registered-7C3AED?style=for-the-badge)](#)
 
 <br>
 
-<img src="https://raw.githubusercontent.com/AUTONOMOUS-PCC-Inc/.github/main/profile/assets/hero.gif" alt="LiDAR point cloud fly-through of a parking structure" width="100%">
+<a href="https://github.com/AUTONOMOUS-PCC-Inc/.github/blob/main/profile/assets/parking-detection.mp4"><img src="https://raw.githubusercontent.com/AUTONOMOUS-PCC-Inc/.github/main/profile/assets/hero.gif" alt="Surround camera and LiDAR vehicle detection while driving through an underground parking garage" width="100%"></a>
 
-<sub>A parking structure reconstructed from real LiDAR point clouds — perceiving space from infrastructure alone, no GPS required.</sub><br>
-<sub>▶ [Watch the original video (MP4)](https://d89yicdpi4w1g.cloudfront.net/videos/hero.mp4)</sub>
+<sub>Real-world drive through an underground parking garage — four surround cameras and a top-mounted LiDAR detect vehicles in real time, no GPS required.</sub><br>
+<sub>▶ [Watch the original video (MP4)](https://github.com/AUTONOMOUS-PCC-Inc/.github/blob/main/profile/assets/parking-detection.mp4)</sub>
 
 </div>
 
@@ -50,6 +50,13 @@ Autonomous vehicle exports are growing fast, yet **the last leg — loading onto
 | 3 | **GPS-Denied Precision Positioning** | Hybrid infrastructure-based control achieves indoor positioning error within 30.5 cm inside ships and ports where signals are blocked. |
 | 4 | **V2X Infrastructure Control** | Bidirectional vehicle–infrastructure communication and SDV (software-defined vehicle) integration let the infrastructure orchestrate the entire loading and unloading process. |
 | 5 | **Fusion Training Datasets** | Builds and labels fisheye (2D) and LiDAR (3D) fusion data in standard COCO, YOLO, and PCD formats, with faces and license plates fully anonymized. |
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/AUTONOMOUS-PCC-Inc/.github/main/profile/assets/lidar-map.gif" alt="LiDAR point cloud fly-through of a parking structure" width="100%">
+
+<sub>Infrastructure-side LiDAR point cloud map of a parking structure — the 3D reference used for GPS-free positioning.</sub><br>
+<sub>▶ [Watch the original video (MP4)](https://d89yicdpi4w1g.cloudfront.net/videos/hero.mp4)</sub>
+</div>
 
 ### Solutions
 
