@@ -13,20 +13,16 @@
   </g>
 
   <g font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" text-anchor="middle">
-    <text x="150" y="96" font-size="52" font-weight="700" fill="#22D3EE">98<tspan font-size="26" fill="#0E7490">%</tspan></text>
-    <text x="150" y="126" font-size="14" font-weight="600" fill="#94A3B8" letter-spacing="1">DETECTION PRECISION</text>
-    <text x="150" y="148" font-size="12" fill="#475569">Fisheye-based vehicle detection</text>
+    <text x="150" y="104" font-size="52" font-weight="700" fill="#22D3EE">98<tspan font-size="26" fill="#0E7490">%</tspan></text>
+    <text x="150" y="136" font-size="14" font-weight="600" fill="#94A3B8" letter-spacing="1">DETECTION PRECISION</text>
 
-    <text x="450" y="96" font-size="52" font-weight="700" fill="#4ADE80">30.5<tspan font-size="26" fill="#15803D">cm</tspan></text>
-    <text x="450" y="126" font-size="14" font-weight="600" fill="#94A3B8" letter-spacing="1">INDOOR POSITIONING ERROR</text>
-    <text x="450" y="148" font-size="12" fill="#475569">Average error without GPS</text>
+    <text x="450" y="104" font-size="52" font-weight="700" fill="#4ADE80">30.5<tspan font-size="26" fill="#15803D">cm</tspan></text>
+    <text x="450" y="136" font-size="14" font-weight="600" fill="#94A3B8" letter-spacing="1">INDOOR POSITIONING ERROR</text>
 
-    <text x="750" y="96" font-size="52" font-weight="700" fill="#A855F7">67<tspan font-size="26" fill="#6B21A8">%</tspan></text>
-    <text x="750" y="126" font-size="14" font-weight="600" fill="#94A3B8" letter-spacing="1">FASTER UNLOADING</text>
-    <text x="750" y="148" font-size="12" fill="#475569">Reduction in unloading time</text>
+    <text x="750" y="104" font-size="52" font-weight="700" fill="#A855F7">67<tspan font-size="26" fill="#6B21A8">%</tspan></text>
+    <text x="750" y="136" font-size="14" font-weight="600" fill="#94A3B8" letter-spacing="1">FASTER UNLOADING</text>
 
-    <text x="1050" y="96" font-size="52" font-weight="700" fill="#FBBF24">40<tspan font-size="26" fill="#B45309">%</tspan></text>
-    <text x="1050" y="126" font-size="14" font-weight="600" fill="#94A3B8" letter-spacing="1">LOWER CAPEX / OPEX</text>
-    <text x="1050" y="148" font-size="12" fill="#475569">vs. LiDAR-based positioning</text>
+    <text x="1050" y="104" font-size="52" font-weight="700" fill="#FBBF24">40<tspan font-size="26" fill="#B45309">%</tspan></text>
+    <text x="1050" y="136" font-size="14" font-weight="600" fill="#94A3B8" letter-spacing="1">LOWER CAPEX / OPEX</text>
   </g>
 </svg>

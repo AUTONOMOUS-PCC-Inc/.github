@@ -7,7 +7,7 @@
 In GPS-denied zones aboard car carriers (PCC) and across port terminals,<br>
 we automate **unmanned unloading and parking** of autonomous vehicles with fisheye–LiDAR fusion positioning.
 
-[![Website](https://img.shields.io/badge/Website-autonomouspcc-0B1B33?style=for-the-badge)](https://d89yicdpi4w1g.cloudfront.net) [![Domain](https://img.shields.io/badge/Field-Ship%20%26%20Port%20Autonomy-1E6FD9?style=for-the-badge)](#) [![TRL](https://img.shields.io/badge/TRL-4~5-16A34A?style=for-the-badge)](#) [![Patents](https://img.shields.io/badge/Patents-3%20registered-7C3AED?style=for-the-badge)](#)
+[![Website](https://img.shields.io/badge/Website-autonomouspcc-0B1B33?style=for-the-badge)](https://d89yicdpi4w1g.cloudfront.net) [![Domain](https://img.shields.io/badge/Field-Ship%20%26%20Port%20Autonomy-1E6FD9?style=for-the-badge)](#what-we-build) [![TRL](https://img.shields.io/badge/TRL-4~5-16A34A?style=for-the-badge)](#capability) [![Patents](https://img.shields.io/badge/Patents-3%20registered-7C3AED?style=for-the-badge)](#capability)
 
 <br>
 
@@ -114,13 +114,13 @@ Our repositories are organized around the following areas.
 
 | Date | Milestone |
 |---|---|
-| **2026.06** | Selected for the Data Voucher Program — Ministry of Science and ICT |
-| **2026.05** | Selected for the Startup-Centered University Program — Ministry of SMEs and Startups |
+| **2026.06** | Selected for the Data Voucher Program (데이터바우처 지원사업) — Ministry of Science and ICT |
+| **2026.05** | Selected for the Startup-Centered University Program (창업중심대학) — Ministry of SMEs and Startups |
 | **2025.12** | Encouragement Award, AICOSS Industry–Academia Collaboration Project Competition |
-| **2025.10** | Selected for the Pre-Startup Package (Deep Tech) — Ministry of SMEs and Startups |
-| **2025.03** | Selected for the Korea I-Corps (K-ICorps) Program — Ministry of Science and ICT |
-| **2024.12** | Grand Prize & Popularity Award, SEEK SQUARE 2024 |
-| **2024.11** | Finalist (5th place), Embedded Software Contest |
+| **2025.10** | Selected for the Pre-Startup Package, Deep Tech track (예비창업패키지 딥테크 분야) — Ministry of SMEs and Startups |
+| **2025.03** | Selected for the Korea I-Corps Program (한국형 아이코어, K-ICorps) — Ministry of Science and ICT |
+| **2024.12** | Top Excellence Award & Popularity Award, SEEK SQUARE 2024 |
+| **2024.11** | Finalist (5th place), Embedded Software Contest (임베디드SW경진대회) |
 | **2024.07** | Excellence Award, ABEEK Portfolio Competition |
 | **2024.06** | Finalist (4th place), AWS Smart City Hackathon |
 
