@@ -11,10 +11,10 @@ we automate **unmanned unloading and parking** of autonomous vehicles with fishe
 
 <br>
 
-<a href="https://github.com/AUTONOMOUS-PCC-Inc/.github/blob/main/profile/assets/parking-detection.mp4"><img src="https://raw.githubusercontent.com/AUTONOMOUS-PCC-Inc/.github/main/profile/assets/hero.gif" alt="Surround camera and LiDAR vehicle detection while driving through an underground parking garage" width="100%"></a>
+<a href="https://cdn.jsdelivr.net/gh/AUTONOMOUS-PCC-Inc/.github@main/profile/assets/parking-detection.mp4"><img src="https://raw.githubusercontent.com/AUTONOMOUS-PCC-Inc/.github/main/profile/assets/hero.gif" alt="Surround camera and LiDAR vehicle detection while driving through an underground parking garage" width="100%"></a>
 
 <sub>Real-world drive through an underground parking garage — four surround cameras and a top-mounted LiDAR detect vehicles in real time, no GPS required.</sub><br>
-<sub>▶ [Watch the original video (MP4)](https://github.com/AUTONOMOUS-PCC-Inc/.github/blob/main/profile/assets/parking-detection.mp4)</sub>
+<sub>▶ [Watch the original video (MP4)](https://cdn.jsdelivr.net/gh/AUTONOMOUS-PCC-Inc/.github@main/profile/assets/parking-detection.mp4)</sub>
 
 </div>
 
