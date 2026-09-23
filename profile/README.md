@@ -1,227 +1,168 @@
-<!-- LANGUAGE TOGGLE -->
-<!-- 🇰🇷 한국어 버전: https://github.com/AUTONOMOUS-PCC-Inc#korean -->
-<!-- 🇺🇸 English Version: https://github.com/AUTONOMOUS-PCC-Inc#english -->
-
 <div align="center">
 
-<img src="https://avatars.githubusercontent.com/u/AUTONOMOUS-PCC-Inc" width="120" alt="AUTONOMOUS PCC Logo"/>
+<img src="https://raw.githubusercontent.com/AUTONOMOUS-PCC-Inc/.github/main/profile/assets/banner.svg" alt="AUTONOMOUS PCC — Fisheye · LiDAR · V2X · Sensor Fusion" width="100%">
 
-# AUTONOMOUS PCC, Inc.
+### Where GPS can't reach, vehicles drive themselves off the ship.
 
-**AI-Controlled Autonomous Vehicle Unloading System**  
-**AI 관제 기반 자율주행 하역 시스템**
+In GPS-denied zones aboard car carriers (PCC) and across port terminals,<br>
+we automate **unmanned unloading and parking** of autonomous vehicles with fisheye–LiDAR fusion positioning.
 
-[![English](#english) | [한국어](#korean)](#)
+[![Website](https://img.shields.io/badge/Website-autonomouspcc-0B1B33?style=flat-square)](https://d89yicdpi4w1g.cloudfront.net) [![Domain](https://img.shields.io/badge/Field-Ship%20%26%20Port%20Autonomy-1E6FD9?style=flat-square)](#) [![TRL](https://img.shields.io/badge/TRL-4~5-16A34A?style=flat-square)](#) [![Patents](https://img.shields.io/badge/Patents-3%20registered-7C3AED?style=flat-square)](#)
 
----
+<br>
 
-> *"No GPS, No Problem, Only Precision."*
+<img src="https://raw.githubusercontent.com/AUTONOMOUS-PCC-Inc/.github/main/profile/assets/hero.gif" alt="LiDAR point cloud fly-through of a parking structure" width="100%">
+
+<sub>A parking structure reconstructed from real LiDAR point clouds — perceiving space from infrastructure alone, no GPS required.</sub><br>
+<sub>▶ [Watch the original video (MP4)](https://d89yicdpi4w1g.cloudfront.net/videos/hero.mp4)</sub>
 
 </div>
 
 ---
 
-<a name="english"></a>
+## Why Now
 
-## 🇺🇸 English
+Autonomous vehicle exports are growing fast, yet **the last leg — loading onto and off the ship — is still done by hand**.
 
-### 🚢 About Us
+| Problem | Details |
+|---|---|
+| **GPS goes dark** | The thick steel hull and cramped decks of PCC vessels block satellite signals. Conventional GNSS-based autonomous driving simply stops working. |
+| **Every car sees differently** | Tesla relies on vision, BYD on LiDAR — perception stacks vary by manufacturer, so no single-method control system can handle every model. |
+| **The steering wheel disappears** | Level 4+ fully autonomous vehicles have no steering wheel. Having drivers move and park them by hand will soon be impossible. |
 
-**AUTONOMOUS PCC, Inc.** (Team: 오토노머스피씨씨) is a deep-tech startup developing **Nae-Ri-Da (내리다)** — an AI-powered autonomous vehicle unloading system for PCC (Pure Car Carrier) vessels.
-
-As autonomous vehicles (Level 4+) become driverless, the existing manual unloading process at ports becomes a critical bottleneck. We solve this with a fully unmanned, AI-controlled loading/unloading platform that works even in GPS-denied environments inside ships.
-
----
-
-### 🎯 Core Product: Nae-Ri-Da (NEARIDA)
-
-> **Autonomous Vehicle Stowage System (AVAS)**  
-> 98% object detection precision · GPS-free indoor localization · Full unmanned operation
-
-| Component | Description |
-|-----------|-------------|
-| 🎥 **VTS** (Vehicle Tracking System) | Fisheye lens-based indoor vehicle tracking & localization |
-| 🧠 **PMS** (Parking Management System) | Digital-twin AI route optimization & stowage planning |
-| 🚗 **AVP** (Autonomous Valet Parking) | SDV vehicle control via V2X communication |
-
-**Key Achievements:**
-- ✅ VTS indoor localization accuracy: avg. error **30.5cm**
-- ✅ AI route visualization accuracy: **95%**
-- ✅ Proven to reduce loading time by up to **67%**
-- ✅ Cost savings up to **₩7M per vessel** (vs. manual loading)
-- ✅ Port productivity improvement: **30%+**
+> We solve this by making the **infrastructure** smart, not the vehicle.
+> Regardless of vehicle specs, the port and onboard infrastructure computes each car's position and sends it the route.
 
 ---
 
-### 🔍 Problem We Solve
+## What We Build
 
-Korea exports **3 million vehicles/year**, yet port automation lags far behind factory automation (only **16%** automation vs. factory).
+<div align="center">
+<img src="https://raw.githubusercontent.com/AUTONOMOUS-PCC-Inc/.github/main/profile/assets/architecture.svg" alt="Architecture: infra fisheye and LiDAR fuse into a positioning engine driving V2X control" width="100%">
+</div>
 
-**3 Core Challenges:**
-1. 🛰️ GPS signals are blocked inside steel-hulled PCC vessels
-2. 📏 Tight inter-vehicle spacing makes LiDAR-based systems malfunction
-3. 🚘 Level 4+ autonomous vehicles have **no steering wheel** — humans can't drive them onboard
+### 5 Core Technologies
 
----
+| # | Technology | Description |
+|:--:|---|---|
+| 1 | **Fisheye 2D–2D Image Fusion** | Precisely matches infrastructure fisheye footage with the vehicle's around-view monitor (AVM) imagery to localize vision-based vehicles. Distortion-corrected training data ensures detection with no blind spots. |
+| 2 | **2D–3D Camera–LiDAR Sensor Fusion** | Combines infrastructure visual data with 3D LiDAR point cloud (PCD) maps to obtain high-precision spatial coordinates for LiDAR-based vehicles. |
+| 3 | **GPS-Denied Precision Positioning** | Hybrid infrastructure-based control achieves indoor positioning error within 30.5 cm inside ships and ports where signals are blocked. |
+| 4 | **V2X Infrastructure Control** | Bidirectional vehicle–infrastructure communication and SDV (software-defined vehicle) integration let the infrastructure orchestrate the entire loading and unloading process. |
+| 5 | **Fusion Training Datasets** | Builds and labels fisheye (2D) and LiDAR (3D) fusion data in standard COCO, YOLO, and PCD formats, with faces and license plates fully anonymized. |
 
-### 💡 Our Solution
+### Solutions
 
-We combine **intelligent parking management know-how** with **fisheye lens image fusion technology** to achieve precise control and fully autonomous stowage — even in GPS-denied environments.
-
-```
-Fisheye Camera (VTS)  →  AI Path Planning (PMS)  →  SDV Control (AVP)
-Indoor Localization       Digital Twin Simulation     V2X Communication
-```
-
-**Competitive Advantages:**
-- Only solution **purpose-built for PCC vessels**
-- **40% lower installation cost** vs. LiDAR-based competitors
-- Full **SDV V2X bidirectional communication**
-- Proven with **Kiwa** (GPS-denied environment test), **Ability Systems** (consortium), **Hyundai Mobis** (commercialization partner)
+- **Vision Positioning** — Fisheye-based 2D–2D vision localization
+- **Sensor Fusion** — Unified 2D–3D camera–LiDAR perception
+- **Autonomous Unloading** — Unmanned unloading automation for ships and ports
+- **Digital Twin PMS** — Digital-twin-based parking optimization
 
 ---
 
-### 📊 Market Size
+## Numbers
 
-| Market | Size | Description |
-|--------|------|-------------|
-| TAM | ₩58 trillion | Global marine vehicle transport (23.7M vehicles) |
-| SAM | ₩16 trillion | Markets where auto-unloading systems are viable |
-| SOM | ₩270 billion | Autonomous vehicle-focused PCC vessels (initial: ~2M vehicles) |
+<div align="center">
+<img src="https://raw.githubusercontent.com/AUTONOMOUS-PCC-Inc/.github/main/profile/assets/metrics.svg" alt="98% detection precision, 30.5cm positioning error, 67% faster unloading, 40% lower cost" width="100%">
+</div>
 
-**Initial target revenue: ₩10B+/year**
-- IP License (Ability Systems, Total Soft Bank): ~₩500M/year
-- Engineering Services (Hyundai Mobis): ~₩300M/year
-- Maintenance (Hyundai Glovis, Gwangyang Port): ~₩200M/year
+By reducing reliance on expensive LiDAR and leveraging low-cost fisheye infrastructure, we cut installation and operating costs by 40%+ compared with conventional positioning methods.
 
 ---
 
-### 🗺️ Roadmap
+## Tech Stack
 
-```
-2026 ──────────────── 2028 ──────────────── 2030
-  │                     │                     │
-  ├─ AVAS upgrade        ├─ Global OEM supply   ├─ Global PCC standard
-  ├─ Gwangyang Port      ├─ US/EU port           ├─ M&A with logistics
-  │  testbed integration │  partnerships         │  mobility companies
-  └─ Seed & TIPS raise   └─ Series-A raise       └─ #1 global auto
-                                                    export port share
-```
+**Perception & Fusion**<br>
+`Python` · `PyTorch` · `OpenCV` · `YOLO` · `Open3D` · `PCL` · `ROS 2`
 
----
+**Simulation & Validation**<br>
+`CARLA` · `AWSIM` · `Autoware`
 
-### 🏗️ Repositories
+**Vehicle & Embedded**<br>
+`AUTOSAR` · `SDV` · `V2X` · `C/C++` · `On-Device AI`
 
-| Repo | Description | Status |
-|------|-------------|--------|
-| [`Vision-AI`](https://github.com/AUTONOMOUS-PCC-Inc/Vision-AI) | Fisheye-based vehicle detection & indoor localization (VTS) | 🟢 Active |
-| [`PMS2.0_digital_twin`](https://github.com/AUTONOMOUS-PCC-Inc/PMS2.0_digital_twin) | Digital twin-based parking management system | 🟡 In Progress |
-| [`PMS`](https://github.com/AUTONOMOUS-PCC-Inc/PMS) | Parking Management System core server (Private) | 🔒 Private |
-| [`PMS_server`](https://github.com/AUTONOMOUS-PCC-Inc/PMS_server) | PMS backend server (Private) | 🔒 Private |
-| [`wecharging`](https://github.com/AUTONOMOUS-PCC-Inc/wecharging) | EV charging integration module | 🟡 In Progress |
+**Standards**<br>
+`ISO 26262` (Functional Safety) · `ISO 21448` (SOTIF) · `COCO` / `YOLO` / `PCD`
 
 ---
 
+## Repositories
 
-### 📬 Contact
+Our repositories are organized around the following areas.
 
-| | |
-|--|--|
-| 📧 Email | 2170004487b@gmail.com |
-| 📱 Phone | 010-2596-6265 |
-| 🌍 Location | Korea, South |
-| 🏢 CEO | 윤성웅 (Yoon Seongung) |
+| Area | Scope |
+|---|---|
+| **Perception** | Fisheye distortion correction, object detection, 2D–2D matching pipeline |
+| **Fusion & Localization** | Camera–LiDAR calibration, PCD registration, indoor positioning engine |
+| **Control & V2X** | Path tracking, vehicle–infrastructure communication, SDV interface |
+| **Dataset Tools** | Labeling and QA tools, anonymization, standard format converters |
+| **Simulation** | Validation of heterogeneous vehicle control algorithms on CARLA / AWSIM |
+| **Web** | Company website (Vite + React + Tailwind) |
 
-
----
-
-<a name="korean"></a>
-
-## 🇰🇷 한국어
-
-### 🚢 회사 소개
-
-**AUTONOMOUS PCC, Inc.** (팀명: 오토노머스피씨씨)는 PCC(자동차 전용선)를 위한 **AI 관제 기반 자율주행 하역 시스템 '내리다(Nae-Ri-Da)'** 를 개발하는 딥테크 스타트업입니다.
-
-레벨 4 이상의 자율주행차는 핸들이 없어 인력으로 선적·하역이 불가능해집니다. 저희는 GPS 차단 환경에서도 완벽하게 작동하는 완전 무인 AI 자율 하역 플랫폼으로 이 문제를 해결합니다.
+> Some repositories are kept private to protect intellectual property and under partner agreements.
 
 ---
 
-### 🎯 핵심 제품: 내리다 (NEARIDA)
+## Milestones
 
-> **수출입 자율주행차량 자동하역지원시스템 (AVAS)**  
-> 98% 객체 탐지 정밀도 · GPS 없는 실내 측위 · 완전 무인 운영
-
-| 구성요소 | 설명 |
-|---------|------|
-| 🎥 **VTS** (차량추적시스템) | 어안렌즈 기반 실내 차량 추적 및 측위 |
-| 🧠 **PMS** (주차관리시스템) | 디지털트윈 AI 경로 최적화 및 적재 계획 |
-| 🚗 **AVP** (자율발렛파킹) | V2X 통신 기반 SDV 차량 제어 |
-
-**주요 성과:**
-- ✅ VTS 실내 측위 정확도: 평균 오차 **30.5cm**
-- ✅ AI 경로 시각화 정확도: **95%**
-- ✅ 선적 시간 최대 **67% 단축** 검증
-- ✅ 선박 1척당 최대 **700만원 비용 절감**
-- ✅ 항만 생산성 **30% 이상** 향상
+| Date | Milestone |
+|---|---|
+| **2026.06** | Selected for the Data Voucher Program — Ministry of Science and ICT |
+| **2026.05** | Selected for the Startup-Centered University Program — Ministry of SMEs and Startups |
+| **2025.12** | Encouragement Award, AICOSS Industry–Academia Collaboration Project Competition |
+| **2025.10** | Selected for the Pre-Startup Package (Deep Tech) — Ministry of SMEs and Startups |
+| **2025.03** | Selected for the Korea I-Corps (K-ICorps) Program — Ministry of Science and ICT |
+| **2024.12** | Grand Prize & Popularity Award, SEEK SQUARE 2024 |
+| **2024.11** | Finalist (5th place), Embedded Software Contest |
+| **2024.07** | Excellence Award, ABEEK Portfolio Competition |
+| **2024.06** | Finalist (4th place), AWS Smart City Hackathon |
 
 ---
 
-### 🔍 해결하는 문제
+## Capability
 
-국내 자동차 수출 규모 **연 300만 대**, 그러나 항만 자동화율은 공장 자동화 대비 **16%** 수준에 불과합니다.
-
-**3가지 핵심 한계:**
-1. 🛰️ 두꺼운 강판으로 인해 선박 내부에서 **GPS 신호 차단**
-2. 📏 차량 적재 시 좁은 이격거리로 기존 **라이다 기반 자율주행 오작동**
-3. 🚘 레벨 4 이상 완전 자율주행차는 **핸들 없음** — 인력 이동 불가
+- A dedicated **team of 7** specializing in autonomous driving and embedded systems
+- Prototype at **TRL 4–5**
+- Heterogeneous vehicle control algorithms validated on **CARLA · AWSIM**
+- **3 registered patents**, including autonomous mobility path tracking, with an additional filing planned for fusion-data-based localization
 
 ---
 
-### 💡 솔루션
+## Roadmap
 
-지능형 주차관제 노하우와 **어안렌즈 영상 융합 기술**을 결합하여, 통신 단절 환경에서도 완벽한 정밀 제어와 무인 적재를 실현합니다.
-
-```
-어안렌즈 카메라 (VTS)  →  AI 경로 계획 (PMS)  →  SDV 차량 제어 (AVP)
-실내 측위                  디지털트윈 시뮬레이션    V2X 통신
-```
-
----
-
-
-### 🏗️ 레포지토리
-
-| 레포 | 설명 | 상태 |
-|------|------|------|
-| [`Vision-AI`](https://github.com/AUTONOMOUS-PCC-Inc/Vision-AI) | 어안렌즈 기반 차량 감지 및 실내 측위 (VTS) | 🟢 개발중 |
-| [`PMS2.0_digital_twin`](https://github.com/AUTONOMOUS-PCC-Inc/PMS2.0_digital_twin) | 디지털트윈 기반 주차관리 시스템 | 🟡 진행중 |
-| [`PMS`](https://github.com/AUTONOMOUS-PCC-Inc/PMS) | 주차관리 시스템 핵심 서버 (비공개) | 🔒 비공개 |
-| [`PMS_server`](https://github.com/AUTONOMOUS-PCC-Inc/PMS_server) | PMS 백엔드 서버 (비공개) | 🔒 비공개 |
-| [`wecharging`](https://github.com/AUTONOMOUS-PCC-Inc/wecharging) | 전기차 충전 연동 모듈 | 🟡 진행중 |
-
+- [x] Fisheye-based indoor positioning prototype (error within 30.5 cm)
+- [x] Simulation validation of control algorithms for vehicles with heterogeneous sensors
+- [ ] Build and release 2D–2D / 2D–3D fusion training datasets
+- [ ] Field demonstration of an integrated operating system at a port testbed
+- [ ] Advance control algorithms to ISO 26262 / 21448 standards
+- [ ] Expand SaaS control services to global PCTC operators
 
 ---
 
-### 📬 연락처
+## Open Data
 
-| | |
-|--|--|
-| 📧 이메일 | 2170004487b@gmail.com |
-| 📱 전화 | 010-2596-6265 |
-| 🌍 위치 | 대한민국 |
-| 🏢 대표자 | 윤성웅 |
+Autonomous driving training data for GPS-denied environments — ship interiors, underground parking garages — is nearly nonexistent in Korea.
+We plan to **open part of our fusion datasets to research institutes and academia** to help advance Korea's self-reliance in autonomous driving technology.
+
+- Fisheye (2D) and LiDAR (3D) fusion data with JSON/XML metadata labels
+- Standard autonomous driving formats (COCO / YOLO / PCD)
+- Released only after anonymizing personal data such as faces and license plates (blurring and masking)
+- Integration with Korea's Public Data Portal and an open API planned
 
 ---
+
+## Contact
 
 <div align="center">
 
-**항만 하역, 이젠 사람 말고 '내리다(Nae-Ri-Da)'**
+**AUTONOMOUS PCC, Inc.** · (주)오토노머스피씨씨
 
-*2030년 글로벌 주요 자동차 수출 항만 점유율 1위 기업으로 도약*
+Field · Autonomous unmanned unloading for ships & ports / precision positioning<br>
+Tech · Fisheye–LiDAR fusion datasets · V2X control
 
-[![License](https://img.shields.io/badge/license-Proprietary-red)](/)
-[![Tech](https://img.shields.io/badge/tech-Computer%20Vision%20%7C%20Autonomous%20Driving%20%7C%20V2X-blue)](/)
-[![Status](https://img.shields.io/badge/status-MVP%20Development-green)](/)
+[![Email](https://img.shields.io/badge/Email-2170004487b%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:2170004487b@gmail.com)
+[![Website](https://img.shields.io/badge/Website-Visit-0B1B33?style=for-the-badge)](https://d89yicdpi4w1g.cloudfront.net)
+
+We welcome inquiries about technical collaboration, pilot partnerships, and careers.
 
 </div>
