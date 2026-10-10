@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-label="Data flow from myconfig to the donkeycar drive loop through this gym environment over TCP 9091 to the Unity simulator, with the browser UI for the human driver">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1B33"/>
+      <stop offset="100%" stop-color="#112744"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#3E6FA8"/>
+    </marker>
+    <marker id="arrb" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M10,1 L1,5 L10,9 z" fill="#3E6FA8"/>
+    </marker>
+    <style>
+      .t    { font-family: "Segoe UI", Inter, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "Consolas", "SF Mono", monospace; }
+      .ttl  { font-size: 14px; font-weight: 700; fill: #E9F1FD; }
+      .num  { font-size: 11px; font-weight: 700; fill: #0B1B33; }
+      .out  { font-size: 10px; fill: #8FA3BF; }
+      .io   { font-size: 12px; font-weight: 600; fill: #BFD3EE; }
+      .cap  { font-size: 11.5px; fill: #6F87A6; }
+      .sec  { font-size: 12px; font-weight: 600; fill: #7FB2FF; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="330" rx="10" fill="url(#pbg)"/>
+  <text class="t sec" x="28" y="34">WHAT THIS REPO SITS BETWEEN</text>
+  <text class="t cap" x="1172" y="34" text-anchor="end">this mirror is the highlighted box</text>
+
+  <g transform="translate(28,58)">
+    <!-- 01 myconfig -->
+    <g>
+      <rect width="196" height="104" rx="8" fill="#12294A" stroke="#1E6FD9" stroke-opacity="0.55"/>
+      <circle cx="20" cy="22" r="11" fill="#1E6FD9"/><text class="t num" x="20" y="26" text-anchor="middle">01</text>
+      <text class="t ttl" x="40" y="26">Student config</text>
+      <g class="t mono out"><text x="14" y="50">myconfig.py</text><text x="14" y="66" fill="#7FB2FF">DONKEY_GYM = True</text><text x="14" y="82">DONKEY_GYM_ENV_NAME</text></g>
+    </g>
+    <!-- 02 donkeycar -->
+    <g transform="translate(228,0)">
+      <rect width="196" height="104" rx="8" fill="#12294A" stroke="#1E6FD9" stroke-opacity="0.55"/>
+      <circle cx="20" cy="22" r="11" fill="#1E6FD9"/><text class="t num" x="20" y="26" text-anchor="middle">02</text>
+      <text class="t ttl" x="40" y="26">donkeycar</text>
+      <g class="t mono out"><text x="14" y="50">manage.py drive</text><text x="14" y="66">drive loop · parts</text><text x="14" y="82">writes the tub</text></g>
+    </g>
+    <!-- 03 this repo -->
+    <g transform="translate(456,0)">
+      <rect width="196" height="104" rx="8" fill="#0B2A1C" stroke="#16A34A" stroke-opacity="0.8" stroke-width="1.6"/>
+      <circle cx="20" cy="22" r="11" fill="#16A34A"/><text class="t num" x="20" y="26" text-anchor="middle">03</text>
+      <text class="t ttl" x="40" y="26" fill="#DFFBEA">gym-donkeycar</text>
+      <g class="t mono out"><text x="14" y="50" fill="#6EE7A0">DonkeyEnv · 11 ids</text><text x="14" y="66">GYM_CONF defaults</text><text x="14" y="82">launches the exe</text></g>
+    </g>
+    <!-- 04 tcp -->
+    <g transform="translate(684,0)">
+      <rect width="150" height="104" rx="8" fill="#12294A" stroke="#2B4F85" stroke-dasharray="5 4"/>
+      <circle cx="20" cy="22" r="11" fill="#6B7280"/><text class="t num" x="20" y="26" text-anchor="middle">04</text>
+      <text class="t ttl" x="40" y="26">Socket</text>
+      <g class="t mono out"><text x="14" y="50" fill="#BFD3EE">TCP :9091</text><text x="14" y="66">json messages</text><text x="14" y="82">image + telemetry</text></g>
+    </g>
+    <!-- 05 simulator -->
+    <g transform="translate(866,0)">
+      <rect width="276" height="104" rx="8" fill="#12294A" stroke="#7C3AED" stroke-opacity="0.55"/>
+      <circle cx="20" cy="22" r="11" fill="#7C3AED"/><text class="t num" x="20" y="26" text-anchor="middle">05</text>
+      <text class="t ttl" x="40" y="26">Unity simulator</text>
+      <g class="t mono out"><text x="14" y="50" fill="#C4A3F5">donkey_sim.exe</text><text x="14" y="66">renders 160x120 camera frames</text><text x="14" y="82">downloaded separately, not in this repo</text></g>
+    </g>
+    <!-- 화살표 -->
+    <g stroke="#3E6FA8" stroke-width="1.6" marker-end="url(#arr)">
+      <line x1="196" y1="52" x2="222" y2="52"/>
+      <line x1="424" y1="52" x2="450" y2="52"/>
+    </g>
+    <!-- 양방향 -->
+    <g stroke="#3E6FA8" stroke-width="1.6" marker-end="url(#arr)" marker-start="url(#arrb)">
+      <line x1="658" y1="52" x2="678" y2="52"/>
+      <line x1="840" y1="52" x2="860" y2="52"/>
+    </g>
+  </g>
+
+  <!-- 사람 운전자 분기 -->
+  <g transform="translate(256,190)">
+    <rect width="196" height="52" rx="8" fill="#0E2342" stroke="#EAB308" stroke-opacity="0.5"/>
+    <text class="t mono" x="14" y="24" font-size="11" fill="#F3D468">browser :8887</text>
+    <text class="t out" x="14" y="42">the human drives here</text>
+  </g>
+  <path d="M 354 162 L 354 190" fill="none" stroke="#3E6FA8" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+
+  <!-- 리허설에서 확인한 것 -->
+  <g transform="translate(486,186)">
+    <rect width="686" height="60" rx="8" fill="#0E2342" stroke="#EAB308" stroke-opacity="0.45" stroke-dasharray="4 4"/>
+    <text class="t io" x="20" y="24" fill="#F3D468">REHEARSED 2026-10-10</text>
+    <text class="t cap" x="20" y="42">First launch fails with "Could not connect to server" — the exe cold-starts slower than the 5 s default start_delay. Set 15.</text>
+  </g>
+
+  <!-- 하단 -->
+  <g transform="translate(28,274)">
+    <rect width="1144" height="44" rx="8" fill="#0E2342" stroke="#2B4F85" stroke-dasharray="4 4"/>
+    <text class="t cap" x="20" y="20">Dependencies at the pinned commit: gym==0.22 · numpy · pillow · python_requires &gt;= 3.7. The course runs it on Python 3.9 under conda.</text>
+    <text class="t cap" x="20" y="36" fill="#8FA3BF">Registered track ids include donkey-generated-track-v0, donkey-generated-roads-v0, donkey-warehouse-v0 and donkey-mountain-track-v0.</text>
+  </g>
+</svg>

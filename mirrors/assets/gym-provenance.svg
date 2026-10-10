@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Provenance chain: tawnkramer upstream to a personal fork whose master tip is empty, to the AUTONOMOUS PCC mirror, to the course repository pinning a SHA">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1B33"/>
+      <stop offset="100%" stop-color="#112744"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#3E6FA8"/>
+    </marker>
+    <style>
+      .t    { font-family: "Segoe UI", Inter, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "Consolas", "SF Mono", monospace; }
+      .ttl  { font-size: 14px; font-weight: 700; fill: #E9F1FD; }
+      .num  { font-size: 11px; font-weight: 700; fill: #0B1B33; }
+      .out  { font-size: 10.5px; fill: #8FA3BF; }
+      .io   { font-size: 12px; font-weight: 600; fill: #BFD3EE; }
+      .cap  { font-size: 11.5px; fill: #6F87A6; }
+      .sec  { font-size: 12px; font-weight: 600; fill: #7FB2FF; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="300" rx="10" fill="url(#pbg)"/>
+  <text class="t sec" x="28" y="34">PROVENANCE</text>
+  <text class="t cap" x="1172" y="34" text-anchor="end">mirror push leaves no fork badge — this chain is the attribution</text>
+
+  <g transform="translate(28,54)">
+    <!-- 01 upstream -->
+    <g>
+      <rect width="252" height="108" rx="8" fill="#12294A" stroke="#1E6FD9" stroke-opacity="0.55"/>
+      <circle cx="20" cy="22" r="11" fill="#1E6FD9"/><text class="t num" x="20" y="26" text-anchor="middle">01</text>
+      <text class="t ttl" x="40" y="26">UPSTREAM</text>
+      <text class="t mono out" x="14" y="52" fill="#7FB2FF">tawnkramer/gym-donkeycar</text>
+      <g class="t out"><text x="14" y="72">the Gym environment · MIT</text><text x="14" y="90">issues and PRs belong here</text></g>
+    </g>
+    <!-- 02 fork -->
+    <g transform="translate(297,0)">
+      <rect width="252" height="108" rx="8" fill="#1A1416" stroke="#EF4444" stroke-opacity="0.55"/>
+      <circle cx="20" cy="22" r="11" fill="#EF4444"/><text class="t num" x="20" y="26" text-anchor="middle">02</text>
+      <text class="t ttl" x="40" y="26" fill="#FCA5A5">PERSONAL FORK</text>
+      <text class="t mono out" x="14" y="52" fill="#BFD3EE">YUNSUNGWOONG/gym-donkeycar</text>
+      <g class="t out"><text x="14" y="72" fill="#FCA5A5">master tip has 0 files</text><text x="14" y="90">the course depended on this</text></g>
+    </g>
+    <!-- 03 mirror -->
+    <g transform="translate(588,0)">
+      <rect width="252" height="108" rx="8" fill="#12294A" stroke="#16A34A" stroke-opacity="0.65"/>
+      <circle cx="20" cy="22" r="11" fill="#16A34A"/><text class="t num" x="20" y="26" text-anchor="middle">03</text>
+      <text class="t ttl" x="40" y="26">THIS MIRROR</text>
+      <text class="t mono out" x="14" y="52" fill="#6EE7A0">AUTONOMOUS-PCC-Inc</text>
+      <g class="t out"><text x="14" y="72">git push --mirror · 2026-10-10</text><text x="14" y="90">249 commits · default aypi-pinned</text></g>
+    </g>
+    <!-- 04 course -->
+    <g transform="translate(891,0)">
+      <rect width="252" height="108" rx="8" fill="#12294A" stroke="#7C3AED" stroke-opacity="0.55"/>
+      <circle cx="20" cy="22" r="11" fill="#7C3AED"/><text class="t num" x="20" y="26" text-anchor="middle">04</text>
+      <text class="t ttl" x="40" y="26">COURSE REPO</text>
+      <text class="t mono out" x="14" y="52" fill="#C4A3F5">aypi-car-tutorial</text>
+      <g class="t out"><text x="14" y="72">submodule, pinned by SHA</text><text x="14" y="90">which is why it still works</text></g>
+    </g>
+    <g stroke="#3E6FA8" stroke-width="1.6" marker-end="url(#arr)">
+      <line x1="258" y1="54" x2="291" y2="54"/>
+      <line x1="555" y1="54" x2="588" y2="54"/>
+      <line x1="852" y1="54" x2="885" y2="54"/>
+    </g>
+    <g class="t out" font-size="9.5" fill="#6F87A6" text-anchor="middle">
+      <text x="275" y="44">fork</text>
+      <text x="572" y="44">mirror</text>
+      <text x="869" y="44">pin</text>
+    </g>
+  </g>
+
+  <!-- 검증된 사실 -->
+  <g transform="translate(28,180)">
+    <rect width="1144" height="62" rx="8" fill="#0E2342" stroke="#16A34A" stroke-opacity="0.5" stroke-dasharray="4 4"/>
+    <text class="t io" x="20" y="25" fill="#6EE7A0">VERIFIED</text>
+    <text class="t cap" x="110" y="25">The pinned commit exists under the same SHA in the upstream, so the installed tree is upstream code — not a fork modification.</text>
+    <text class="t mono cap" x="110" y="46" fill="#8FA3BF">beac6ff46f6ec9f61798be28dcaec4bb598a2602   ·   2023-09-08   ·   "fixing CI (#82)"   ·   present in tawnkramer/gym-donkeycar</text>
+  </g>
+
+  <g transform="translate(28,262)">
+    <text class="t cap" x="0" y="14">Only README.md differs from the upstream tree, and its parent commit IS the pinned commit — so the submodule SHA never moved.</text>
+  </g>
+</svg>

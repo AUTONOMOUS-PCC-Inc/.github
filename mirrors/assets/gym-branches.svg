@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" width="1200" height="390" role="img" aria-label="Branch layout: aypi-pinned holds the pinned commit with 60 files while master's tip has git's empty tree and zero files, so submodule update --remote empties the directory">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1B33"/>
+      <stop offset="100%" stop-color="#112744"/>
+    </linearGradient>
+    <marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#16A34A"/>
+    </marker>
+    <marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#EF4444"/>
+    </marker>
+    <style>
+      .t    { font-family: "Segoe UI", Inter, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "Consolas", "SF Mono", monospace; }
+      .ttl  { font-size: 14px; font-weight: 700; fill: #E9F1FD; }
+      .out  { font-size: 10.5px; fill: #8FA3BF; }
+      .io   { font-size: 12px; font-weight: 600; fill: #BFD3EE; }
+      .cap  { font-size: 11.5px; fill: #6F87A6; }
+      .sec  { font-size: 12px; font-weight: 600; fill: #7FB2FF; letter-spacing: 2px; }
+      .big  { font-size: 22px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="390" rx="10" fill="url(#pbg)"/>
+  <text class="t sec" x="28" y="34">BRANCH LAYOUT — READ THIS BEFORE TOUCHING THE SUBMODULE</text>
+
+  <!-- 공통 조상 커밋 -->
+  <g transform="translate(28,120)">
+    <circle cx="26" cy="26" r="15" fill="#16A34A"/>
+    <circle cx="26" cy="26" r="24" fill="none" stroke="#16A34A" stroke-opacity="0.35" stroke-width="1.5"/>
+    <text class="t mono" x="26" y="74" font-size="11.5" fill="#6EE7A0" text-anchor="middle">beac6ff</text>
+    <text class="t mono" x="26" y="92" font-size="10" fill="#8FA3BF" text-anchor="middle">60 files</text>
+    <text class="t cap" x="26" y="-14" text-anchor="middle">pinned</text>
+  </g>
+
+  <!-- 분기선 -->
+  <path d="M 80 146 C 120 146 120 86 160 86" fill="none" stroke="#16A34A" stroke-width="2" marker-end="url(#arrg)"/>
+  <path d="M 80 146 C 120 146 120 238 160 238" fill="none" stroke="#EF4444" stroke-width="2" marker-end="url(#arrr)"/>
+
+  <!-- 상단: aypi-pinned (안전) -->
+  <g transform="translate(172,52)">
+    <rect width="420" height="70" rx="8" fill="#12294A" stroke="#16A34A" stroke-opacity="0.65"/>
+    <text class="t mono" x="18" y="28" font-size="12.5" fill="#6EE7A0">aypi-pinned</text>
+    <rect x="128" y="14" width="124" height="20" rx="10" fill="#16A34A" fill-opacity="0.18" stroke="#16A34A" stroke-opacity="0.5"/>
+    <text class="t mono" x="190" y="28" font-size="10" fill="#6EE7A0" text-anchor="middle">DEFAULT BRANCH</text>
+    <text class="t out" x="18" y="52">tip = the pinned commit · code, setup.py and LICENSE all visible</text>
+  </g>
+
+  <!-- 하단: master (위험) -->
+  <g transform="translate(172,204)">
+    <rect width="420" height="92" rx="8" fill="#1A1416" stroke="#EF4444" stroke-opacity="0.65"/>
+    <text class="t mono" x="18" y="28" font-size="12.5" fill="#FCA5A5">master</text>
+    <rect x="98" y="14" width="150" height="20" rx="10" fill="#EF4444" fill-opacity="0.16" stroke="#EF4444" stroke-opacity="0.5"/>
+    <text class="t mono" x="173" y="28" font-size="10" fill="#FCA5A5" text-anchor="middle">TIP DELETES EVERY FILE</text>
+    <text class="t mono out" x="18" y="52" fill="#BFD3EE">0a805ad · 2024-02-16 · commit message: "d"</text>
+    <text class="t mono out" x="18" y="70">tree 4b825dc642cb6eb9a060e54bf8d69288fbee4904</text>
+    <text class="t out" x="18" y="86" fill="#FCA5A5">that is git's empty tree — kept only so history is not lost</text>
+  </g>
+
+  <!-- 결과 카운터 -->
+  <g transform="translate(616,52)">
+    <rect width="150" height="70" rx="8" fill="#0E2342" stroke="#16A34A" stroke-opacity="0.5"/>
+    <text class="t big" x="75" y="38" fill="#6EE7A0" text-anchor="middle">60</text>
+    <text class="t out" x="75" y="56" text-anchor="middle">files checked out</text>
+  </g>
+  <g transform="translate(616,215)">
+    <rect width="150" height="70" rx="8" fill="#1A1416" stroke="#EF4444" stroke-opacity="0.5"/>
+    <text class="t big" x="75" y="38" fill="#FCA5A5" text-anchor="middle">0</text>
+    <text class="t out" x="75" y="56" text-anchor="middle">files checked out</text>
+  </g>
+
+  <!-- 명령 결과 -->
+  <g transform="translate(790,46)">
+    <rect width="382" height="82" rx="8" fill="#0E2342" stroke="#16A34A" stroke-opacity="0.55"/>
+    <text class="t io" x="18" y="26" fill="#6EE7A0">SAFE — always use this</text>
+    <rect x="18" y="36" width="346" height="26" rx="5" fill="#0B1B33" stroke="#2B4F85"/>
+    <text class="t mono" x="30" y="53" font-size="11" fill="#E9F1FD">git submodule update --init --recursive</text>
+    <text class="t out" x="18" y="76">checks out the recorded SHA and ignores the branch tip</text>
+  </g>
+  <g transform="translate(790,204)">
+    <rect width="382" height="92" rx="8" fill="#1A1416" stroke="#EF4444" stroke-opacity="0.55"/>
+    <text class="t io" x="18" y="26" fill="#FCA5A5">NEVER — this empties the folder</text>
+    <rect x="18" y="36" width="346" height="26" rx="5" fill="#0B1B33" stroke="#7F1D1D"/>
+    <text class="t mono" x="30" y="53" font-size="11" fill="#FCA5A5">git submodule update --remote</text>
+    <text class="t out" x="18" y="76">.gitmodules declares branch = master, so --remote jumps</text>
+    <text class="t out" x="18" y="88">to the empty tip and wipes the submodule directory</text>
+  </g>
+
+  <!-- 하단 주석 -->
+  <g transform="translate(28,324)">
+    <rect width="1144" height="46" rx="8" fill="#0E2342" stroke="#2B4F85" stroke-dasharray="4 4"/>
+    <text class="t cap" x="20" y="22">The course has always been fine because the course repository records a SHA, not a branch — so it never looks at the tip above.</text>
+    <text class="t cap" x="20" y="38" fill="#F3D468">This mirror's default branch was set to aypi-pinned for exactly one reason: on master, the landing page would show no code and no LICENSE.</text>
+  </g>
+</svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" width="1200" height="250" role="img" aria-label="donkeycar dependency mirror — pinned at d60dcb5e, 2185 commits, behavior cloning from camera image to steering and throttle">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1B33"/>
+      <stop offset="60%" stop-color="#0E2342"/>
+      <stop offset="100%" stop-color="#132C52"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1E6FD9"/>
+      <stop offset="50%" stop-color="#16A34A"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#1E6FD9" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1E6FD9" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .t  { font-family: "Segoe UI", Inter, "Helvetica Neue", Arial, sans-serif; }
+      .h1 { font-size: 42px; font-weight: 700; fill: #F2F7FF; letter-spacing: -0.5px; }
+      .h2 { font-size: 17px; font-weight: 600; fill: #7FB2FF; letter-spacing: 3.2px; }
+      .sub{ font-size: 15px; fill: #8FA3BF; }
+      .tag{ font-size: 12.5px; font-weight: 600; fill: #BFD3EE; }
+      .mono{ font-family: "JetBrains Mono", "Consolas", "SF Mono", monospace; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="250" rx="10" fill="url(#bg)"/>
+  <circle cx="960" cy="125" r="180" fill="url(#glow)"/>
+
+  <!-- 좌측: 조향 휠 모티프 -->
+  <g transform="translate(96,125)" opacity="0.95">
+    <circle r="54" fill="none" stroke="#1E6FD9" stroke-opacity="0.22" stroke-width="1"/>
+    <circle r="44" fill="none" stroke="#1E6FD9" stroke-opacity="0.55" stroke-width="3"/>
+    <circle r="11" fill="#F2F7FF"/>
+    <g stroke="#7FB2FF" stroke-width="3" stroke-linecap="round">
+      <line x1="0" y1="-11" x2="0" y2="-41"/>
+      <line x1="-9.5" y1="5.5" x2="-35.5" y2="20.5"/>
+      <line x1="9.5" y1="5.5" x2="35.5" y2="20.5"/>
+    </g>
+    <path d="M -30 -46 A 56 56 0 0 1 30 -46" fill="none" stroke="#16A34A" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4"/>
+    <circle cx="30" cy="-46" r="3.2" fill="#16A34A"/>
+  </g>
+
+  <!-- 본문 -->
+  <text class="t h2" x="196" y="76">DEPENDENCY MIRROR</text>
+  <text class="t h1" x="196" y="126">donkeycar, organization-owned</text>
+  <text class="t sub" x="196" y="156">Mirror of autorope/donkeycar · pinned at d60dcb5e · the upstream tree, not a fork edit</text>
+
+  <!-- 태그 -->
+  <g transform="translate(196,178)">
+    <g>
+      <rect x="0" y="0" width="128" height="26" rx="13" fill="#1E6FD9" fill-opacity="0.16" stroke="#1E6FD9" stroke-opacity="0.45"/>
+      <text class="t tag mono" x="64" y="17.5" text-anchor="middle">2,185 commits</text>
+    </g>
+    <g transform="translate(138,0)">
+      <rect x="0" y="0" width="104" height="26" rx="13" fill="#16A34A" fill-opacity="0.16" stroke="#16A34A" stroke-opacity="0.45"/>
+      <text class="t tag mono" x="52" y="17.5" text-anchor="middle">216 files</text>
+    </g>
+    <g transform="translate(252,0)">
+      <rect x="0" y="0" width="112" height="26" rx="13" fill="#7C3AED" fill-opacity="0.16" stroke="#7C3AED" stroke-opacity="0.45"/>
+      <text class="t tag mono" x="56" y="17.5" text-anchor="middle">v5.1.dev0</text>
+    </g>
+    <g transform="translate(374,0)">
+      <rect x="0" y="0" width="86" height="26" rx="13" fill="#EAB308" fill-opacity="0.14" stroke="#EAB308" stroke-opacity="0.40"/>
+      <text class="t tag mono" x="43" y="17.5" text-anchor="middle">MIT</text>
+    </g>
+  </g>
+
+  <!-- 우측: 행동 복제 경로 image → CNN → angle/throttle -->
+  <g transform="translate(852,62)" opacity="0.94">
+    <rect x="0" y="34" width="74" height="56" rx="6" fill="#132C52" stroke="#2B4F85"/>
+    <g stroke="#2B4F85" stroke-width="1">
+      <line x1="0" y1="62" x2="74" y2="62"/>
+      <line x1="37" y1="34" x2="37" y2="90"/>
+    </g>
+    <text class="t mono" x="37" y="26" font-size="10.5" fill="#7FB2FF" text-anchor="middle">160x120</text>
+    <g fill="#1E6FD9" fill-opacity="0.75">
+      <rect x="98" y="40" width="12" height="44" rx="2"/>
+      <rect x="118" y="48" width="12" height="28" rx="2"/>
+      <rect x="138" y="54" width="12" height="16" rx="2"/>
+    </g>
+    <text class="t mono" x="124" y="26" font-size="10.5" fill="#7FB2FF" text-anchor="middle">conv</text>
+    <g stroke="#3E6FA8" stroke-dasharray="3 3">
+      <line x1="74" y1="62" x2="98" y2="62"/>
+      <line x1="150" y1="62" x2="174" y2="62"/>
+    </g>
+    <g>
+      <rect x="174" y="36" width="96" height="24" rx="12" fill="#0B1B33" stroke="#16A34A" stroke-opacity="0.6"/>
+      <text class="t mono" x="222" y="52" font-size="10.5" fill="#16A34A" text-anchor="middle">angle</text>
+      <rect x="174" y="66" width="96" height="24" rx="12" fill="#0B1B33" stroke="#7C3AED" stroke-opacity="0.6"/>
+      <text class="t mono" x="222" y="82" font-size="10.5" fill="#C4A3F5" text-anchor="middle">throttle</text>
+    </g>
+    <text class="t mono" x="222" y="112" font-size="10" fill="#6F87A6" text-anchor="middle">behavior cloning</text>
+  </g>
+
+  <rect x="0" y="244" width="1200" height="6" rx="3" fill="url(#accent)" opacity="0.85"/>
+</svg>
