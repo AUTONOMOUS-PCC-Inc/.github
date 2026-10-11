@@ -24,7 +24,7 @@
   <g transform="translate(28,52)">
     <rect width="1144" height="40" rx="8" fill="#0E2342" stroke="#2B4F85"/>
     <text class="t mono dir" x="18" y="25">aypi-car-tutorial/</text>
-    <text class="t cap" x="190" y="25">the folder you cloned — the install guide names it DonkeyBro, which is the same thing</text>
+    <text class="t cap" x="190" y="25">the folder you cloned — the install guide uses this same name, so the two always match</text>
   </g>
 
   <!-- 트리 세로선 -->
@@ -55,7 +55,7 @@
     <line x1="-18" y1="20" x2="0" y2="20" stroke="#2B4F85" stroke-width="1" stroke-dasharray="3 3"/>
     <rect width="1108" height="40" rx="8" fill="#12294A" stroke="#2B4F85"/>
     <text class="t mono dir" x="16" y="25">envs/</text>
-    <text class="t out" x="290" y="25">donkeybro_for_windows.yml — the conda environment is built from this file</text>
+    <text class="t out" x="290" y="25">aypi-car_for_windows.yml — the conda environment aypi-car is built from this file</text>
   </g>
 
   <!-- 4 library_sheet -->

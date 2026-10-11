@@ -60,10 +60,10 @@
       <text class="t tag mono" x="43" y="17.5" text-anchor="middle">Windows</text>
     </g>
     <g transform="translate(190,0)">
-      <rect x="0" y="0" width="150" height="26" rx="13" fill="#16A34A" fill-opacity="0.16" stroke="#16A34A" stroke-opacity="0.45"/>
-      <text class="t tag mono" x="75" y="17.5" text-anchor="middle">conda: donkeybro</text>
+      <rect x="0" y="0" width="140" height="26" rx="13" fill="#16A34A" fill-opacity="0.16" stroke="#16A34A" stroke-opacity="0.45"/>
+      <text class="t tag mono" x="70" y="17.5" text-anchor="middle">conda: aypi-car</text>
     </g>
-    <g transform="translate(350,0)">
+    <g transform="translate(344,0)">
       <rect x="0" y="0" width="102" height="26" rx="13" fill="#7C3AED" fill-opacity="0.16" stroke="#7C3AED" stroke-opacity="0.45"/>
       <text class="t tag mono" x="51" y="17.5" text-anchor="middle">Python 3.9</text>
     </g>

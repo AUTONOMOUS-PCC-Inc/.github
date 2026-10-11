@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Six stage day: describe, render, export GLB in the morning; scene, place your model, character in the afternoon">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1B33"/>
+      <stop offset="100%" stop-color="#112744"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#3E6FA8"/>
+    </marker>
+    <marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#16A34A"/>
+    </marker>
+    <style>
+      .t    { font-family: "Segoe UI", Inter, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "Consolas", "SF Mono", monospace; }
+      .ttl  { font-size: 14px; font-weight: 700; fill: #E9F1FD; }
+      .num  { font-size: 11px; font-weight: 700; fill: #0B1B33; }
+      .out  { font-size: 10px; fill: #8FA3BF; }
+      .io   { font-size: 12px; font-weight: 600; fill: #BFD3EE; }
+      .cap  { font-size: 11.5px; fill: #6F87A6; }
+      .sec  { font-size: 12px; font-weight: 600; fill: #7FB2FF; letter-spacing: 2px; }
+      .half { font-size: 10.5px; font-weight: 700; letter-spacing: 1.6px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="400" rx="10" fill="url(#pbg)"/>
+  <text class="t sec" x="28" y="34">YOUR DAY IN SIX STEPS</text>
+  <text class="t cap" x="1172" y="34" text-anchor="end">session 2 · metaverse and CAD · one clone covers both halves</text>
+
+  <!-- 오전/오후 구간 표시 -->
+  <g transform="translate(28,46)">
+    <rect x="0" y="0" width="554" height="18" rx="9" fill="#1E6FD9" fill-opacity="0.12" stroke="#1E6FD9" stroke-opacity="0.35"/>
+    <text class="t half" x="277" y="13" fill="#7FB2FF" text-anchor="middle">MORNING · TEXT-TO-CAD · NOTHING TO INSTALL</text>
+    <rect x="576" y="0" width="568" height="18" rx="9" fill="#7C3AED" fill-opacity="0.12" stroke="#7C3AED" stroke-opacity="0.35"/>
+    <text class="t half" x="860" y="13" fill="#C4A3F5" text-anchor="middle">AFTERNOON · WEB 3D · RUNS ON YOUR MACHINE</text>
+  </g>
+
+  <g transform="translate(28,76)">
+    <!-- 01 describe -->
+    <g>
+      <rect width="170" height="110" rx="8" fill="#12294A" stroke="#1E6FD9" stroke-opacity="0.55"/>
+      <circle cx="20" cy="22" r="11" fill="#1E6FD9"/><text class="t num" x="20" y="26" text-anchor="middle">01</text>
+      <text class="t ttl" x="40" y="26">Describe</text>
+      <g class="t mono out"><text x="14" y="52">tell Codex a shape</text><text x="14" y="70">in plain words</text></g>
+      <text class="t mono out" x="14" y="96" fill="#7FB2FF">OpenSCAD code</text>
+    </g>
+    <!-- 02 render -->
+    <g transform="translate(192,0)">
+      <rect width="170" height="110" rx="8" fill="#12294A" stroke="#1E6FD9" stroke-opacity="0.55"/>
+      <circle cx="20" cy="22" r="11" fill="#1E6FD9"/><text class="t num" x="20" y="26" text-anchor="middle">02</text>
+      <text class="t ttl" x="40" y="26">Render</text>
+      <g class="t mono out"><text x="14" y="52">Playground, no login</text><text x="14" y="70">paste, press Render</text></g>
+      <text class="t mono out" x="14" y="96" fill="#7FB2FF">a shape on screen</text>
+    </g>
+    <!-- 03 fix and export -->
+    <g transform="translate(384,0)">
+      <rect width="170" height="110" rx="8" fill="#12294A" stroke="#16A34A" stroke-opacity="0.55"/>
+      <circle cx="20" cy="22" r="11" fill="#16A34A"/><text class="t num" x="20" y="26" text-anchor="middle">03</text>
+      <text class="t ttl" x="40" y="26">Fix, export</text>
+      <g class="t mono out"><text x="14" y="52">look, then re-ask</text><text x="14" y="70">export as GLB</text></g>
+      <text class="t mono out" x="14" y="96" fill="#6EE7A0">one .glb, 10-50 KB</text>
+    </g>
+    <!-- 04 scene -->
+    <g transform="translate(576,0)">
+      <rect width="170" height="110" rx="8" fill="#12294A" stroke="#7C3AED" stroke-opacity="0.55"/>
+      <circle cx="20" cy="22" r="11" fill="#7C3AED"/><text class="t num" x="20" y="26" text-anchor="middle">04</text>
+      <text class="t ttl" x="40" y="26">Scene</text>
+      <g class="t mono out"><text x="14" y="52">npm run dev</text><text x="14" y="70">experience.jsx</text></g>
+      <text class="t mono out" x="14" y="96" fill="#C4A3F5">floor and lights</text>
+    </g>
+    <!-- 05 place -->
+    <g transform="translate(768,0)">
+      <rect width="170" height="110" rx="8" fill="#12294A" stroke="#7C3AED" stroke-opacity="0.55"/>
+      <circle cx="20" cy="22" r="11" fill="#7C3AED"/><text class="t num" x="20" y="26" text-anchor="middle">05</text>
+      <text class="t ttl" x="40" y="26">Place it</text>
+      <g class="t mono out"><text x="14" y="52">drop GLB in public/</text><text x="14" y="70">useGLTF loads it</text></g>
+      <text class="t mono out" x="14" y="96" fill="#C4A3F5">your model, lit</text>
+    </g>
+    <!-- 06 character -->
+    <g transform="translate(960,0)">
+      <rect width="170" height="110" rx="8" fill="#12294A" stroke="#EAB308" stroke-opacity="0.55"/>
+      <circle cx="20" cy="22" r="11" fill="#EAB308"/><text class="t num" x="20" y="26" text-anchor="middle">06</text>
+      <text class="t ttl" x="40" y="26">Character</text>
+      <g class="t mono out"><text x="14" y="52">Robot.glb + WASD</text><text x="14" y="70">5 animation clips</text></g>
+      <text class="t mono out" x="14" y="96" fill="#F3D468">it walks around</text>
+    </g>
+    <!-- 화살표 -->
+    <g stroke="#3E6FA8" stroke-width="1.6" marker-end="url(#arr)">
+      <line x1="170" y1="56" x2="186" y2="56"/>
+      <line x1="362" y1="56" x2="378" y2="56"/>
+      <line x1="746" y1="56" x2="762" y2="56"/>
+      <line x1="938" y1="56" x2="954" y2="56"/>
+    </g>
+    <!-- 03 에서 04 로 넘어가는 자리 = 하루의 이음새 -->
+    <g stroke="#16A34A" stroke-width="2.4" marker-end="url(#arrg)">
+      <line x1="554" y1="56" x2="570" y2="56"/>
+    </g>
+  </g>
+
+  <!-- 이음새 -->
+  <g transform="translate(28,204)">
+    <rect width="1144" height="56" rx="8" fill="#0B2A1C" stroke="#16A34A" stroke-opacity="0.6" stroke-dasharray="4 4"/>
+    <text class="t io" x="20" y="24" fill="#6EE7A0">THE HANDOFF</text>
+    <text class="t cap" x="140" y="24">Step 03 produces one small GLB file. Step 05 loads that exact file. The morning is not a warm-up — it is where the afternoon gets its material.</text>
+    <text class="t cap" x="140" y="43" fill="#8FA3BF">OpenSCAD writes colour as material and never as a texture, so the file stays tiny and looks in the browser the way it looked in the Playground.</text>
+  </g>
+
+  <!-- 측정값 -->
+  <g transform="translate(28,274)">
+    <rect width="1144" height="58" rx="8" fill="#0E2342" stroke="#EAB308" stroke-opacity="0.45" stroke-dasharray="4 4"/>
+    <text class="t io" x="20" y="24" fill="#F3D468">MEASURED</text>
+    <text class="t cap" x="140" y="24">2026-10-11, on a clean directory: clone 1.2 s, release asset 6 s, offline install 11 s, build 12 s, dev server up in 1.5 s.</text>
+    <text class="t cap" x="140" y="43" fill="#8FA3BF">With the cache in place the install needs no internet at all — which is the point, since a full room cannot each pull 149 MB at the same time.</text>
+  </g>
+
+  <g transform="translate(28,348)">
+    <rect width="1144" height="34" rx="8" fill="#0E2342" stroke="#2B4F85" stroke-dasharray="4 4"/>
+    <text class="t io" x="20" y="22">NO SIGN-UPS</text>
+    <text class="t cap" x="140" y="22">Nothing today needs a new account. The Playground has no login and the starter runs on your own machine — only Codex, which you already have from session 1.</text>
+  </g>
+</svg>

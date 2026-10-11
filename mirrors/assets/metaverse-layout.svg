@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 484" width="1200" height="484" role="img" aria-label="Folder map: what arrives with the clone, the one file you edit, where you drop your own files, and what you download from the release">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1B33"/>
+      <stop offset="100%" stop-color="#112744"/>
+    </linearGradient>
+    <style>
+      .t    { font-family: "Segoe UI", Inter, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "Consolas", "SF Mono", monospace; }
+      .dir  { font-size: 13px; font-weight: 600; fill: #E9F1FD; }
+      .out  { font-size: 11px; fill: #8FA3BF; }
+      .io   { font-size: 12px; font-weight: 600; fill: #BFD3EE; }
+      .cap  { font-size: 11.5px; fill: #6F87A6; }
+      .sec  { font-size: 12px; font-weight: 600; fill: #7FB2FF; letter-spacing: 2px; }
+      .bdg  { font-size: 9.5px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="484" rx="10" fill="url(#pbg)"/>
+  <text class="t sec" x="28" y="34">WHAT IS IN THIS FOLDER</text>
+  <text class="t cap" x="1172" y="34" text-anchor="end">blue arrives with the clone · green you fill in · yellow you download</text>
+
+  <!-- 루트 -->
+  <g transform="translate(28,52)">
+    <rect width="1144" height="40" rx="8" fill="#0E2342" stroke="#2B4F85"/>
+    <text class="t mono dir" x="18" y="25">aypi-metaverse-tutorial/</text>
+    <text class="t cap" x="250" y="25">one repository for the whole day — the morning lives in cad/, the afternoon in web3d/</text>
+  </g>
+
+  <!-- 트리 세로선 -->
+  <line x1="46" y1="92" x2="46" y2="306" stroke="#2B4F85" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- 1 cad -->
+  <g transform="translate(64,104)">
+    <line x1="-18" y1="20" x2="0" y2="20" stroke="#2B4F85" stroke-width="1" stroke-dasharray="3 3"/>
+    <rect width="1108" height="40" rx="8" fill="#12294A" stroke="#1E6FD9" stroke-opacity="0.55"/>
+    <text class="t mono dir" x="16" y="25" fill="#7FB2FF">cad/examples/</text>
+    <rect x="170" y="11" width="92" height="19" rx="9" fill="#1E6FD9" fill-opacity="0.18" stroke="#1E6FD9" stroke-opacity="0.45"/>
+    <text class="t mono bdg" x="216" y="24" fill="#7FB2FF" text-anchor="middle">morning</text>
+    <text class="t out" x="290" y="25">four .scad files to paste into the Playground, in order. Nothing to install — you never open these in an editor</text>
+  </g>
+
+  <!-- 2 web3d -->
+  <g transform="translate(64,150)">
+    <line x1="-18" y1="20" x2="0" y2="20" stroke="#2B4F85" stroke-width="1" stroke-dasharray="3 3"/>
+    <rect width="1108" height="40" rx="8" fill="#12294A" stroke="#7C3AED" stroke-opacity="0.55"/>
+    <text class="t mono dir" x="16" y="25" fill="#C4A3F5">web3d/</text>
+    <rect x="170" y="11" width="98" height="19" rx="9" fill="#7C3AED" fill-opacity="0.18" stroke="#7C3AED" stroke-opacity="0.45"/>
+    <text class="t mono bdg" x="219" y="24" fill="#C4A3F5" text-anchor="middle">afternoon</text>
+    <text class="t out" x="290" y="25">the React Three Fiber starter. Run every npm command from inside this folder, not from the root</text>
+  </g>
+
+  <!-- web3d 하위 트리 -->
+  <line x1="92" y1="190" x2="92" y2="398" stroke="#2B4F85" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- 2a experience.jsx -->
+  <g transform="translate(110,196)">
+    <line x1="-18" y1="20" x2="0" y2="20" stroke="#2B4F85" stroke-width="1" stroke-dasharray="3 3"/>
+    <rect width="1062" height="40" rx="8" fill="#101F3C" stroke="#7FB2FF" stroke-opacity="0.85" stroke-width="1.6"/>
+    <text class="t mono dir" x="16" y="25" fill="#E9F1FD">src/experience.jsx</text>
+    <rect x="170" y="11" width="104" height="19" rx="9" fill="#7FB2FF" fill-opacity="0.22" stroke="#7FB2FF" stroke-opacity="0.6"/>
+    <text class="t mono bdg" x="222" y="24" fill="#DCE9FB" text-anchor="middle">you edit this</text>
+    <text class="t out" x="326" y="25">the only file you change all afternoon. It starts as an empty scene: a floor, two lights, orbit controls</text>
+  </g>
+
+  <!-- 2b public -->
+  <g transform="translate(110,242)">
+    <line x1="-18" y1="20" x2="0" y2="20" stroke="#2B4F85" stroke-width="1" stroke-dasharray="3 3"/>
+    <rect width="1062" height="40" rx="8" fill="#0B2A1C" stroke="#16A34A" stroke-opacity="0.7"/>
+    <text class="t mono dir" x="16" y="25" fill="#6EE7A0">public/</text>
+    <rect x="170" y="11" width="134" height="19" rx="9" fill="#16A34A" fill-opacity="0.18" stroke="#16A34A" stroke-opacity="0.45"/>
+    <text class="t mono bdg" x="237" y="24" fill="#6EE7A0" text-anchor="middle">your GLB goes here</text>
+    <text class="t out" x="326" y="25">already holds Robot.glb, room-transformed.glb, monkey.glb and one HDRI. Your morning file joins them</text>
+  </g>
+
+  <!-- 2c CLAUDE.md -->
+  <g transform="translate(110,288)">
+    <line x1="-18" y1="20" x2="0" y2="20" stroke="#2B4F85" stroke-width="1" stroke-dasharray="3 3"/>
+    <rect width="1062" height="40" rx="8" fill="#12294A" stroke="#2B4F85"/>
+    <text class="t mono dir" x="16" y="25">CLAUDE.md</text>
+    <text class="t out" x="326" y="25">what the AI is told before it writes anything: library versions, the rules, and the list of assets it may use</text>
+  </g>
+
+  <!-- 2d npm-cache -->
+  <g transform="translate(110,334)">
+    <line x1="-18" y1="20" x2="0" y2="20" stroke="#2B4F85" stroke-width="1" stroke-dasharray="3 3"/>
+    <rect width="1062" height="40" rx="8" fill="#1C1A10" stroke="#EAB308" stroke-opacity="0.6"/>
+    <text class="t mono dir" x="16" y="25" fill="#F3D468">npm-cache/</text>
+    <rect x="170" y="11" width="104" height="19" rx="9" fill="#EAB308" fill-opacity="0.16" stroke="#EAB308" stroke-opacity="0.45"/>
+    <text class="t mono bdg" x="222" y="24" fill="#F3D468" text-anchor="middle">you download</text>
+    <text class="t out" x="326" y="25">not in git. Unzip npm-cache.zip from the v1.0.0 release right here, and the install runs with no internet</text>
+  </g>
+
+  <!-- 2e node_modules -->
+  <g transform="translate(110,380)">
+    <line x1="-18" y1="20" x2="0" y2="20" stroke="#2B4F85" stroke-width="1" stroke-dasharray="3 3"/>
+    <rect width="1062" height="40" rx="8" fill="#12294A" stroke="#2B4F85" stroke-dasharray="4 4"/>
+    <text class="t mono dir" x="16" y="25" fill="#6F87A6">node_modules/</text>
+    <text class="t out" x="326" y="25">appears after npm ci. Never open it, never commit it, and if things go strange delete it and install again</text>
+  </g>
+
+  <text class="t cap" x="28" y="446">You spend the morning in a browser tab and the afternoon inside web3d. If an npm command fails, check which folder you are standing in first.</text>
+  <text class="t cap" x="28" y="465" fill="#8FA3BF">Broke something? Run git restore . in the repository root puts every file back the way it was cloned. Your own GLB in public/ is untracked, so it survives.</text>
+</svg>
