@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-label="The afternoon rail: a schedule triggers a public API call, one LLM call summarises it, and Gmail sends it to you — no API keys, one account">
+  <defs>
+    <linearGradient id="rbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1B33"/>
+      <stop offset="100%" stop-color="#112744"/>
+    </linearGradient>
+    <marker id="rarrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#3E6FA8"/>
+    </marker>
+    <style>
+      .t    { font-family: "Segoe UI", Inter, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "Consolas", "SF Mono", monospace; }
+      .sec  { font-size: 12px; font-weight: 600; fill: #7FB2FF; letter-spacing: 2px; }
+      .cap  { font-size: 11.5px; fill: #6F87A6; }
+      .nt   { font-size: 14px; font-weight: 700; }
+      .ns   { font-size: 10.5px; fill: #8FA3BF; }
+      .auth { font-size: 10px; font-weight: 600; }
+      .step { font-size: 9.5px; fill: #6F87A6; letter-spacing: 1.4px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="330" rx="10" fill="url(#rbg)"/>
+  <text class="t sec" x="28" y="34">THE AFTERNOON RAIL · EVERYONE BUILDS THIS ONE FIRST</text>
+
+  <!-- 비용 요약 칩 -->
+  <g transform="translate(1000,18)">
+    <rect width="172" height="24" rx="12" fill="#16A34A" fill-opacity="0.14" stroke="#16A34A" stroke-opacity="0.5"/>
+    <text class="t mono auth" x="86" y="16" fill="#6EE7A0" text-anchor="middle">API keys 0 · accounts 1</text>
+  </g>
+
+  <!-- 노드 4개 -->
+  <g>
+    <!-- 1 스케줄 -->
+    <g transform="translate(90,80)">
+      <rect width="210" height="72" rx="8" fill="#0B1B33" stroke="#1E6FD9" stroke-opacity="0.65"/>
+      <text class="t step" x="14" y="20">TRIGGER</text>
+      <text class="t nt" x="14" y="42" fill="#7FB2FF">Schedule</text>
+      <text class="t ns" x="14" y="60">every day at 08:00</text>
+    </g>
+    <g transform="translate(90,164)">
+      <rect width="210" height="24" rx="12" fill="#12294A" stroke="#2B4F85"/>
+      <text class="t mono auth" x="105" y="16" fill="#8FA3BF" text-anchor="middle">nothing to sign in to</text>
+    </g>
+
+    <!-- 2 HTTP -->
+    <g transform="translate(360,80)">
+      <rect width="210" height="72" rx="8" fill="#0B1B33" stroke="#1E6FD9" stroke-opacity="0.65"/>
+      <text class="t step" x="14" y="20">FETCH</text>
+      <text class="t nt" x="14" y="42" fill="#7FB2FF">HTTP Request</text>
+      <text class="t ns" x="14" y="60">a public API, open to all</text>
+    </g>
+    <g transform="translate(360,164)">
+      <rect width="210" height="24" rx="12" fill="#12294A" stroke="#2B4F85"/>
+      <text class="t mono auth" x="105" y="16" fill="#8FA3BF" text-anchor="middle">no key needed</text>
+    </g>
+
+    <!-- 3 LLM -->
+    <g transform="translate(630,80)">
+      <rect width="210" height="72" rx="8" fill="#0B1B33" stroke="#16A34A" stroke-opacity="0.65"/>
+      <text class="t step" x="14" y="20">THINK · ONCE</text>
+      <text class="t nt" x="14" y="42" fill="#6EE7A0">LLM</text>
+      <text class="t ns" x="14" y="60">summarise it in Korean</text>
+    </g>
+    <g transform="translate(630,164)">
+      <rect width="210" height="24" rx="12" fill="#0B2A1C" stroke="#16A34A" stroke-opacity="0.5"/>
+      <text class="t mono auth" x="105" y="16" fill="#6EE7A0" text-anchor="middle">Use Gateway credits</text>
+    </g>
+
+    <!-- 4 Gmail -->
+    <g transform="translate(900,80)">
+      <rect width="210" height="72" rx="8" fill="#0B1B33" stroke="#7C3AED" stroke-opacity="0.65"/>
+      <text class="t step" x="14" y="20">ACTION</text>
+      <text class="t nt" x="14" y="42" fill="#C4A3F5">Gmail</text>
+      <text class="t ns" x="14" y="60">send it to myself</text>
+    </g>
+    <g transform="translate(900,164)">
+      <rect width="210" height="24" rx="12" fill="#12294A" stroke="#7C3AED" stroke-opacity="0.5"/>
+      <text class="t mono auth" x="105" y="16" fill="#C4A3F5" text-anchor="middle">Sign in with Google</text>
+    </g>
+
+    <!-- 연결 -->
+    <g fill="none" stroke="#3E6FA8" stroke-width="2" marker-end="url(#rarrow)">
+      <path d="M 300 116 h 46"/>
+      <path d="M 570 116 h 46"/>
+      <path d="M 840 116 h 46"/>
+    </g>
+  </g>
+
+  <!-- 양 끝만 바꾸면 내 업무가 된다 -->
+  <g stroke="#EAB308" stroke-opacity="0.75" fill="none" stroke-width="1.4">
+    <path d="M 90 206 v 10 h 210 v -10"/>
+    <path d="M 900 206 v 10 h 210 v -10"/>
+  </g>
+  <g class="t mono" font-size="10.5" fill="#F3D468" text-anchor="middle">
+    <text x="195" y="236">your trigger</text>
+    <text x="1005" y="236">your action</text>
+  </g>
+  <text class="t cap" x="600" y="236" text-anchor="middle">the middle stays the same — you swap the two ends for your own job</text>
+
+  <!-- 경고 -->
+  <g transform="translate(210,264)">
+    <rect width="780" height="42" rx="8" fill="#1A1416" stroke="#EF4444" stroke-opacity="0.55"/>
+    <text class="t mono" x="22" y="26" font-size="12" fill="#FCA5A5">ONE LLM call — not an agent loop</text>
+    <text class="t" x="296" y="26" font-size="11.5" fill="#8FA3BF">an agent node with tools fires ten per run, and trial credit cannot be topped up</text>
+  </g>
+</svg>

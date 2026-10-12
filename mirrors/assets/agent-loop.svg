@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-label="The same loop twice: run it, read what came back, change one thing — in the morning with Codex and in the afternoon with n8n">
+  <defs>
+    <linearGradient id="lbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1B33"/>
+      <stop offset="100%" stop-color="#112744"/>
+    </linearGradient>
+    <marker id="lcyc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#7FB2FF"/>
+    </marker>
+    <marker id="lcycp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#C4A3F5"/>
+    </marker>
+    <style>
+      .t    { font-family: "Segoe UI", Inter, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "Consolas", "SF Mono", monospace; }
+      .cap  { font-size: 11.5px; fill: #6F87A6; }
+      .sec  { font-size: 12px; font-weight: 600; fill: #7FB2FF; letter-spacing: 2px; }
+      .ctr  { font-size: 11px; font-weight: 700; letter-spacing: 1.4px; }
+      .ctr2 { font-size: 10px; fill: #6F87A6; }
+      .stage{ font-size: 9.5px; font-weight: 700; fill: #6F87A6; letter-spacing: 1.8px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="330" rx="10" fill="url(#lbg)"/>
+  <text class="t sec" x="28" y="34">WHAT MAKES IT AN AGENT</text>
+  <text class="t cap" x="1172" y="34" text-anchor="end">it picks its own next step — and keeps going until the result is right</text>
+
+  <!-- 오전 루프 — Codex -->
+  <g transform="translate(300,176)">
+    <circle r="78" fill="none" stroke="#2B4F85" stroke-width="1" stroke-dasharray="3 4"/>
+    <text class="t ctr" x="0" y="-4" fill="#7FB2FF" text-anchor="middle">MORNING</text>
+    <text class="t mono ctr2" x="0" y="14" text-anchor="middle">Codex · in code</text>
+    <g text-anchor="middle">
+      <g class="t mono" font-size="10.5">
+        <g>
+          <rect x="-62" y="-96" width="124" height="24" rx="12" fill="#0B1B33" stroke="#1E6FD9" stroke-opacity="0.6"/>
+          <text x="0" y="-80" fill="#7FB2FF">run the tests</text>
+        </g>
+        <g>
+          <rect x="16" y="30" width="122" height="24" rx="12" fill="#0B1B33" stroke="#EF4444" stroke-opacity="0.6"/>
+          <text x="77" y="46" fill="#FCA5A5">5 are red</text>
+        </g>
+        <g>
+          <rect x="-140" y="30" width="122" height="24" rx="12" fill="#0B1B33" stroke="#1E6FD9" stroke-opacity="0.6"/>
+          <text x="-79" y="46" fill="#7FB2FF">edit one file</text>
+        </g>
+      </g>
+      <g class="t stage">
+        <text x="0" y="-104">RUN</text>
+        <text x="77" y="70">READ</text>
+        <text x="-79" y="70">CHANGE</text>
+      </g>
+    </g>
+    <g fill="none" stroke="#7FB2FF" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#lcyc)">
+      <path d="M 52 -58 A 78 78 0 0 1 76 -12"/>
+      <path d="M 50 62 A 78 78 0 0 1 -48 64"/>
+      <path d="M -76 -14 A 78 78 0 0 1 -50 -60"/>
+    </g>
+  </g>
+
+  <!-- 오후 루프 — n8n -->
+  <g transform="translate(900,176)">
+    <circle r="78" fill="none" stroke="#2B4F85" stroke-width="1" stroke-dasharray="3 4"/>
+    <text class="t ctr" x="0" y="-4" fill="#C4A3F5" text-anchor="middle">AFTERNOON</text>
+    <text class="t mono ctr2" x="0" y="14" text-anchor="middle">n8n · no code</text>
+    <g text-anchor="middle">
+      <g class="t mono" font-size="10.5">
+        <g>
+          <rect x="-70" y="-96" width="140" height="24" rx="12" fill="#0B1B33" stroke="#7C3AED" stroke-opacity="0.6"/>
+          <text x="0" y="-80" fill="#C4A3F5">run the workflow</text>
+        </g>
+        <g>
+          <rect x="16" y="30" width="134" height="24" rx="12" fill="#0B1B33" stroke="#EF4444" stroke-opacity="0.6"/>
+          <text x="83" y="46" fill="#FCA5A5">it stopped here</text>
+        </g>
+        <g>
+          <rect x="-152" y="30" width="134" height="24" rx="12" fill="#0B1B33" stroke="#7C3AED" stroke-opacity="0.6"/>
+          <text x="-85" y="46" fill="#C4A3F5">fix one node</text>
+        </g>
+      </g>
+      <g class="t stage">
+        <text x="0" y="-104">RUN</text>
+        <text x="83" y="70">READ</text>
+        <text x="-85" y="70">CHANGE</text>
+      </g>
+    </g>
+    <g fill="none" stroke="#C4A3F5" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#lcycp)">
+      <path d="M 52 -58 A 78 78 0 0 1 76 -12"/>
+      <path d="M 50 62 A 78 78 0 0 1 -48 64"/>
+      <path d="M -76 -14 A 78 78 0 0 1 -50 -60"/>
+    </g>
+  </g>
+
+  <!-- 가운데: 같은 원 -->
+  <g transform="translate(600,176)" text-anchor="middle">
+    <line x1="0" y1="-112" x2="0" y2="112" stroke="#2B4F85" stroke-dasharray="2 5"/>
+    <rect x="-96" y="-34" width="192" height="68" rx="8" fill="#0B1B33" stroke="#2B4F85"/>
+    <text class="t sec" y="-12" font-size="11">THE SAME CIRCLE</text>
+    <text class="t mono" y="8" font-size="10" fill="#8FA3BF">observe · decide · act</text>
+    <text class="t" y="26" font-size="10.5" fill="#6F87A6">only the tool changes</text>
+  </g>
+
+  <text class="t cap" x="600" y="312" text-anchor="middle">A chatbot answers once. An agent runs this circle by itself until the job is done — that is the whole difference.</text>
+</svg>

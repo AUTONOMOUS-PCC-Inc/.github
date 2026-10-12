@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="What is in the session 3 folder: AGENTS.md, the morning codex-demo project, the afternoon n8n workflow, and the worksheet">
+  <defs>
+    <linearGradient id="ybg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1B33"/>
+      <stop offset="100%" stop-color="#112744"/>
+    </linearGradient>
+    <style>
+      .t    { font-family: "Segoe UI", Inter, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: "JetBrains Mono", "Consolas", "SF Mono", monospace; }
+      .sec  { font-size: 12px; font-weight: 600; fill: #7FB2FF; letter-spacing: 2px; }
+      .leg  { font-size: 11px; fill: #6F87A6; }
+      .repo { font-size: 15px; font-weight: 700; fill: #E9F1FD; }
+      .path { font-size: 12.5px; fill: #BFD3EE; }
+      .desc { font-size: 11.5px; fill: #8FA3BF; }
+      .chip { font-size: 10px; font-weight: 700; }
+      .note { font-size: 11.5px; fill: #6F87A6; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="440" rx="10" fill="url(#ybg)"/>
+  <text class="t sec" x="28" y="34">WHAT IS IN THIS FOLDER</text>
+  <text class="t leg" x="28" y="54">blue arrives with the clone · green you fill in · red never touch</text>
+
+  <text class="t mono repo" x="28" y="92">aypi-agent-tutorial/</text>
+  <text class="t desc" x="250" y="92">one repository for the whole day — the morning lives in codex-demo/, the afternoon in n8n/</text>
+  <line x1="28" y1="106" x2="1172" y2="106" stroke="#2B4F85" stroke-opacity="0.6"/>
+
+  <!-- AGENTS.md -->
+  <g transform="translate(0,138)">
+    <text class="t mono path" x="40" y="0">AGENTS.md</text>
+    <g transform="translate(312,-13)">
+      <rect width="118" height="20" rx="10" fill="#1E6FD9" fill-opacity="0.16" stroke="#1E6FD9" stroke-opacity="0.5"/>
+      <text class="t mono chip" x="59" y="14" fill="#7FB2FF" text-anchor="middle">standing context</text>
+    </g>
+    <text class="t desc" x="450" y="0">what Codex reads before it starts: this machine, the rules, the commands. Today's lesson, as a file</text>
+  </g>
+
+  <!-- codex-demo/ -->
+  <g transform="translate(0,180)">
+    <text class="t mono path" x="40" y="0" fill="#E9F1FD">codex-demo/</text>
+    <g transform="translate(352,-13)">
+      <rect width="78" height="20" rx="10" fill="#1E6FD9" fill-opacity="0.16" stroke="#1E6FD9" stroke-opacity="0.5"/>
+      <text class="t mono chip" x="39" y="14" fill="#7FB2FF" text-anchor="middle">morning</text>
+    </g>
+    <text class="t desc" x="450" y="0">run every python command from inside this folder, never from the repository root</text>
+  </g>
+
+  <!-- daily_report.py -->
+  <g transform="translate(0,216)">
+    <text class="t mono path" x="64" y="0">daily_report.py</text>
+    <g transform="translate(306,-13)">
+      <rect width="124" height="20" rx="10" fill="#16A34A" fill-opacity="0.16" stroke="#16A34A" stroke-opacity="0.5"/>
+      <text class="t mono chip" x="62" y="14" fill="#6EE7A0" text-anchor="middle">Codex edits this</text>
+    </g>
+    <text class="t desc" x="450" y="0">the only file that changes all morning. Three things are wrong with it, and you fix none of them yourself</text>
+  </g>
+
+  <!-- tests/ -->
+  <g transform="translate(0,252)">
+    <text class="t mono path" x="64" y="0">tests/</text>
+    <g transform="translate(334,-13)">
+      <rect width="96" height="20" rx="10" fill="#EF4444" fill-opacity="0.14" stroke="#EF4444" stroke-opacity="0.5"/>
+      <text class="t mono chip" x="48" y="14" fill="#FCA5A5" text-anchor="middle">never touch</text>
+    </g>
+    <text class="t desc" x="450" y="0">this is the spec. Seven tests, five of them red. If they all go green at once, you edited the wrong file</text>
+  </g>
+
+  <!-- data/logs.csv -->
+  <g transform="translate(0,288)">
+    <text class="t mono path" x="64" y="0">data/logs.csv</text>
+    <g transform="translate(334,-13)">
+      <rect width="96" height="20" rx="10" fill="#EF4444" fill-opacity="0.14" stroke="#EF4444" stroke-opacity="0.5"/>
+      <text class="t mono chip" x="48" y="14" fill="#FCA5A5" text-anchor="middle">never touch</text>
+    </g>
+    <text class="t desc" x="450" y="0">the input. The stray spaces inside it are deliberate — one of the three bugs only shows up because of them</text>
+  </g>
+
+  <!-- n8n/ -->
+  <g transform="translate(0,330)">
+    <text class="t mono path" x="40" y="0" fill="#E9F1FD">n8n/rail-skeleton.json</text>
+    <g transform="translate(342,-13)">
+      <rect width="88" height="20" rx="10" fill="#7C3AED" fill-opacity="0.16" stroke="#7C3AED" stroke-opacity="0.5"/>
+      <text class="t mono chip" x="44" y="14" fill="#C4A3F5" text-anchor="middle">afternoon</text>
+    </g>
+    <text class="t desc" x="450" y="0">import it into n8n. Import it again and whatever you broke is back to the way it started</text>
+  </g>
+
+  <!-- worksheet/ -->
+  <g transform="translate(0,366)">
+    <text class="t mono path" x="40" y="0" fill="#E9F1FD">worksheet/</text>
+    <g transform="translate(336,-13)">
+      <rect width="94" height="20" rx="10" fill="#16A34A" fill-opacity="0.16" stroke="#16A34A" stroke-opacity="0.5"/>
+      <text class="t mono chip" x="47" y="14" fill="#6EE7A0" text-anchor="middle">you fill in</text>
+    </g>
+    <text class="t desc" x="450" y="0">written at 11:35, used at 14:20. No worksheet means nothing to build after lunch</text>
+  </g>
+
+  <line x1="28" y1="390" x2="1172" y2="390" stroke="#2B4F85" stroke-opacity="0.6"/>
+  <text class="t note" x="28" y="410">Standing in the wrong folder is the fastest way to lose ten minutes. Morning: inside <tspan class="mono" fill="#BFD3EE">codex-demo</tspan>. Afternoon: inside the browser.</text>
+  <text class="t note" x="28" y="428">Put <tspan class="mono" fill="#F3D468">-X utf8</tspan> in every python command. Without it the Korean test names come out as <tspan class="mono" fill="#FCA5A5">test_??????</tspan> and you cannot read what failed.</text>
+</svg>
